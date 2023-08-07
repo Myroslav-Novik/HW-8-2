@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW-8-2</title>
+    <style>
+
+
+
+        /* Псевдокласи стану */
+
+
+        .button1:hover {
+            color: white;
+            background-color: blue;
+        }
+
+        .a1:link {
+            color: red;
+        }
+
+        .a2:visited {
+            color: teal;
+        }
+
+        .a3:focus {
+            color: black;
+            background-color: aqua;
+        }
+
+        .button2:disabled {
+            color: azure;
+            background-color: grey;
+        }
+
+
+
+        /* Структурні псевдокласи */
+
+
+        .monday li:nth-child(1) {
+            color: orange;
+        }
+
+        .tuesday li:nth-child(-n+1) {
+            color: darkturquoise;
+        }
+
+        .wednesday li:last-child {
+            background-color: dodgerblue;
+        }
+
+        .thursday li:first-child {
+            background-color: yellow;
+        }
+
+        .friday li:nth-child(odd) {
+            background-color: khaki;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="monday">
+            <li>Праця (:nth-child(1))</li>
+            <li>Праця</li>
+            <li><button class="button1">Математика (:hover)</button></li>
+            <li>Фізкультура</li>
+            <li>Географія</li>
+            <li>Українська мова</li>
+        </ul>
+        <ul class="tuesday">
+            <li>Англійська мова (:nth-child(-n+1))</li>
+            <li>Історія</li>
+            <li>Зарубіжна література</li>
+            <li><a href="#" target="_blank" class="a1">Інформатика (:link)</a></li>
+            <li>Образотворче мистецтво</li>
+            <li>Англійська мова</li>
+            <li>Фізкультура</li>
+        </ul>
+        <ul class="wednesday">
+            <li><a href="##" target="_blank" class="a2">Зарубіжна література (:visited)</a></li>
+            <li>Географія</li>
+            <li>Біологія</li>
+            <li>Математика</li>
+            <li>Українська мова</li>
+            <li>Музика (:last-child)</li>
+        </ul>
+        <ul class="thursday">
+            <li>Математика (:first-child)</li>
+            <li>Українська мова</li>
+            <li><a href="###" class="a3">Історія (:focus)</a></li>
+            <li>Українська література</li>
+            <li>Англійська мова</li>
+            <li>Біологія</li>
+        </ul>
+        <ul class="friday">
+            <li>Математика (:nth-child(odd))</li>
+            <li><button class="button2" disabled>Фізкультура (:disabled)</button></li>
+            <li>Українська мова (:nth-child(odd))</li>
+            <li>Основи здоров'я</li>
+            <li>Етика (:nth-child(odd))</li>
+        </ul>
+    </div>
+</body>
+</html>
